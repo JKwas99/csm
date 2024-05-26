@@ -1,0 +1,223 @@
+/*
+font-family: "Prompt", sans-serif;
+font-family: "Roboto", sans-serif;
+    color: #627254;
+    color: #EEEEEE;
+*/
+body{
+    background-color: #0C0C0C;
+    padding: 0px 0px;
+    overflow-x: hidden;
+    font-family: "Prompt", sans-serif;
+    margin: 0;
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 5;
+}
+.logo>img{
+    width: 150px;
+    position: absolute;
+    z-index: 5;
+}
+.text-header{
+    width: 100%;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    background-color: rgb(12, 12, 12, 0.7);
+    color: #EEEEEE;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.desc-text{
+    padding: 40vh 0% 0 0;
+    font-size: 60px;
+    font-weight: 750;
+}
+.desc-in{
+    font-size: 27px;
+    margin: 5px;
+    color: #e61414; 
+    font-weight: 600;
+}
+#poznaj{
+    margin: 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 8px 25px;
+    color: #EEEEEE;
+    width: 200px;
+    border: 2px solid #EEEEEE;
+    position: relative;
+    transition: all .2s linear;
+}
+#poznaj:hover{
+    background-color: #EEEEEE;
+    color: #0C0C0C;
+    transition: all .2s linear;
+}
+/* #poznaj::after{
+    content: 'Poznaj nas bliżej';
+    position: absolute;
+    top: 2px;
+    padding: 8px 25px;
+    font-size: 25px;
+    width: 200px;
+    left: 5px;
+    background-color: #EEEEEE;
+    border: 2px solid #EEEEEE;
+    color: #0C0C0C;
+} */
+header{
+   width: 100vw;
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-image: url(images/download.png); 
+   background-size: cover;
+}
+.kierunki-h3{
+    font-size: 80px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    color: #EEEEEE;
+}
+.kierunki-box{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+}
+.kierunki-box>div{
+    text-align: center;
+    width: 30%;
+    margin: 5px 20px;
+    border-bottom: 3px solid #b3ff01;
+    padding: 5px 20px;
+}
+.kierunki-box>div>i{
+    font-size: 120px;
+    color: #b3ff01;
+}
+.kierunki-box>div>h4{
+    font-size: 35px;
+    color: #8bd64e;
+    margin: 10px;
+}
+.kierunki-box>div>p{
+    font-size: 22px;
+    color: #EEEEEE;
+}
+.kierunki-box>div:hover{
+    background-color: rgb(139, 214, 78, 0.1);
+    cursor: pointer;
+}
+.kierunki-now{
+    margin-top: 70px;
+    padding: 100px 0px;
+    width: 100vw;
+    background-image: radial-gradient(rgb(139, 214, 78, 0.8) 1px, transparent 0);
+    background-size: 50px 50px;
+    background-position: -19px -19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kierunki-now>div{
+    width: 50%;
+    margin:30px;
+}
+.kierunki-now>div>p{
+    font-size: 20px;
+    color: #eeeeeeb2;
+    width: 80%;
+}
+.kierunki-now>div>h3{
+    font-size: 50px;
+    display: inline-block;
+    color: #EEEEEE;
+    margin-bottom: 10px;
+    filter: drop-shadow(5px 5px 0px #000000);
+}
+.kierunki-now>div>h3>span{
+    color: #e61414;
+    font-size: 55px;
+}
+.kierunki-now>ul{
+    width: 30%;
+    margin:30px;
+    padding: 30px;
+    font-size: 25px;
+    color: #b3ff01;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+.kierunki-now>ul>li{
+    list-style-type: none;
+    margin: 20px;
+    color: #EEEEEE;
+    filter: drop-shadow(5px 5px 0px #000000);
+    position: relative;
+}
+.kierunki-now>ul>li>span{
+    width: 35px;
+    height: 35px;
+    background-color: #8bd64e;
+    filter: drop-shadow(2px 2px 0px #000000);
+    position: absolute;
+    top: 0;
+    left: -55px;
+}
+.sp{
+    color: #b3ff01!important;
+}
+.mediaSocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mediaSocial>a{
+    text-align: center;
+    width: 20%;
+    height: 200px;
+    color: rgb(255, 247, 252);
+    text-decoration: none;
+    margin: 5px;
+}
+.mediaSocial>a:hover{
+    color: rgb(179, 255, 1);
+    cursor: pointer;
+}
+.mediaSocial>a>img{
+    height: 140px;
+    margin: 10px;
+}
+.mediaSocial>a>i{
+    font-size: 7em;
+    height: 140px;
+    text-align: center;
+}
+.mediaSocial>a>p{
+    margin: 5px;
+    font-size: 25px;
+}
+.social>h4{
+    font-size: 3em;
+    color: #FFF7FC;
+    text-align: left;
+    position: relative;
+}
+.mediaSoc{
+    color: #b3ff01;
+}
+.social{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
