@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="hamburger.css">
     <link rel="stylesheet" href="fontello-2a08c8d8/css/fontello.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,22 +30,25 @@
     <title>CSM</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="logo">
-            <img src="images/csm.png" alt="">
+            <img src="images/csm2.png" alt="Liceum Mundurowe Zamość CSM">
         </div>
         <div class="text-header">
             <div class="desc-text">LICEUM OGÓLNOKSZTAŁCĄCE<br>CENTRUM SZKÓŁ MUNDUROWYCH ZAMOŚĆ</div>
-            <p class="desc-in">Łączy nas wspólna pasja</p>
-            <a id="poznaj" href="#">Poznaj nas bliżej</a>
+            <p class="desc-in">MUNDURÓWKA</p>
+            <a id="poznaj" href="#">
+                <span class="tekst" id="animowanyTekst1">NOWOŚĆ!</span> <span id="specjal">SPECJALIZACJA</span> <span class="tekst2" id="animowanyTekst2">DRONY</span>
+              </a>              
         </div>
         <div class="menu">
             <ul class="menu-list">
                 <a href="#main2" class="active-menu list-item" target="_self">Strona główna</a>
                 <a href="podstrony/wbudowie.html" class="list-item" target="_self">Rekrutacja</a>
                 <a href="podstrony/wbudowie.html" class="list-item" target="_self">Dokumenty</a>
+                <a href="#kontakt" class="list-item" target="_self">Kontakt</a>
                 <a href="https://uonetplus.vulcan.net.pl/krakow" class="list-item" target="_blank">Dziennik</a>
-                <a href="podstrony/wbudowie.html" class="list-item" target="_self">Plany zajęć</a>
+                <a href="podstrony/wbudowie.html" class="list-item" target="_self">Plan zajęć</a>
             </ul>
             <button class="hamburger">
                 <span class="hamburger-box">
@@ -37,38 +58,372 @@
         </div>
     </header>
     <main>
-        <div class="kierunki">
-            <h3 class="kierunki-h3">KIERUNKI KSZTAŁCENIA</h3>
-            <div class="kierunki-box">
+        <div class="ak">
+            <h4>Aktualności</h4>
+            <div class="infoAK">
                 <div>
-                    <i class="demo-icon icon-target"></i>
-                    <h4>Klasa Wojskowa</h4>
-                    <p>Jeżeli należysz do osób, które cenią dyscyplinę, są obowiązkowe i zdolne do poświęceń - profil wojskowy jest dla Ciebie.</p>
+                    <h3>02.10.2024</h3>
+                    <p>Zebranie z rodzicami</p>
+                    <a href="#">Link do Facebook'a</a>
                 </div>
                 <div>
-                    <i class="demo-icon icon-police"></i>
-                    <h4>Klasa Policyjna</h4>
-                    <p>Jeżeli jesteś odpowiedzialny, bezkompromisowy oraz lojalny to znaczy, że masz cechy cenione w policji i klasa o tym profilu jest dla Ciebie.</p>
+                    <h3>21.09.2024</h3>
+                    <p>Wycieczka do Sandomierza</p>
+                    <a href="#">Link do Facebook'a</a>
                 </div>
                 <div>
-                    <i class="demo-icon icon-map"></i>
-                    <h4>Straż Graniczna</h4>
-                    <p>Odwaga, siła i odpowiedzialność to cechy każdego pogranicznika. Jeżeli chciałbyś znaleźć się w tym gronie to nauka w LO CSM Zamość na profilu straż graniczna może Ci to ułatwić.</p>
+                    <h3>09.09.2024</h3>
+                    <p>Obóz w Majdanie</p>
+                    <a href="#">Link do Facebook'a</a>
                 </div>
             </div>
-            <div class="kierunki-now">
-                <div>
-                    <h3>KLASA<br><span>WOJSKOWO-TECHNOLOGICZNA</span><br><span class="sp">SPECJALIZACJA DRONY</span></h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias culpa atque molestias sequi temporibus! Sed excepturi, qui ex molestias soluta ab, quo harum voluptatem tempora sequi placeat, eveniet hic vitae.</p>
+        </div>
+        <div class="filmik" id="filmik">
+            <div class="vid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yeCOcUtFfds?si=5j6lrmffV3hjS8EK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="infovid">
+                <h3><span class="letL">Ł</span>ączy nas wspólna pasja</h3>
+            <ul class="laczy">
+                <li><span></span>Działamy od 2010 roku.</li>
+                <li><span></span>Jesteśmy szkołą niepubliczną o uprawnieniach szkoły publicznej dla młodzieży.</li>
+                <li><span></span>Nauka trwa 4 lata, kończy się egzaminem maturalnym.</li>
+                <li><span></span>Oprócz przedmiotów ogólnokształcących szkolimy w zakresie przedmiotów
+                    specjalistycznych.</li>
+                <li><span></span>Uczniowie uczestniczą w obowiązkowych zajęciach, które znajdują się na świadectwie
+                    ukończenia szkoły: edukacje specjalistyczne (przygotowanie wojskowe, edukacja
+                    policyjna, edukacja straży granicznej, taktyka i techniki interwencji, angielski w służbach
+                    mundurowych).</li>
+            </ul>
+            </div>
+        </div>
+        <div class="kierunki">
+            <h3 class="kierunki-h3" id="kierunki">KIERUNKI KSZTAŁCENIA</h3>
+            <div class="kierunki-box">
+                <div class="woj">
+                    <i class="demo-icon icon-target"></i>
+                    <div>
+                        <h4>Klasa <span>Wojskowa</span></h4>
+                        <p>
+                            Jeżeli należysz do osób, które cenią dyscyplinę, są obowiązkowe i zdolne do poświęceń - <span>profil wojskowy jest dla Ciebie.</span>
+                        </p>
+                        <button class="moreee" id="openModal1">Dowiedz się więcej</button>
+                    </div>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close">
+                                <span class="x"></span>
+                            </span>
+                            <h1>Klasa Wojskowa</h1>
+                            <p>W LOCSM Zamość prowadzimy klasy wojskowe, które są objęte patronatem <span class="tekst2">Ministerstwa Obrony
+                                Narodowej</span>. W tych oddziałach realizowane jest szkolenie w formie dodatkowych zajęć edukacyjnych, a
+                                jego program określa rozporządzenie Ministra Obrony Narodowej z dnia 21 maja 2020 r. w sprawie
+                                szkolenia w <span class="tekst2">Oddziale Przygotowania Wojskowego</span>.
+                                <span class="tekst">W czasie czteroletniego cyklu nauczania młodzież klasy wojskowej uczestniczy w:</span></p>
+                                <ul>
+                                    <li><span></span>230 godzinach zajęć wojskowych, w tym 53 godzinach zajęć teoretycznych i 177 godzinach zajęć
+                                        praktycznych</li>
+                                    <li><span></span>obowiązkowych zajęciach z taktyki i technik interwencji;</li>
+                                    <li><span></span>w klasie IV biorą udział w 50 godzinnym obozie szkoleniowym na terenie jednostki patronackiej.</li>
+                                </ul>
+                                <p> <span class="tekst2">Uczniowie zyskują wiedzę z zakresu m.in.:</span></p>
+                                <ul>
+                                    <li><span></span>Podstawy wychowania wojskowego</li>
+                                    <li><span></span>Regulaminów</li>
+                                    <li><span></span>Szkolenia logistycznego</li>
+                                    <li><span></span>Budowy i eksploatacji sprzętu bojowego</li>
+                                    <li><span></span>Terenoznawstwa</li>                                    
+                                </ul>
+                                <p>W ramach realizacji zajęć wojskowych współpracujemy z jednostką patronacką, którą jest 3 Batalion
+                                    Zmechanizowany w Zamościu, a także innymi jednostkami wojskowymi: 25 Batalionem Lekkiej
+                                    Piechoty OT oraz 18 Pułkiem Przeciwlotniczym w Sitańcu.</p>
+                                <h2>Zajęcia praktyczne:</h2>
+                                <p>Uczeń kończący szkolenie w ramach klasy wojskowej OPW może skorzystać z możliwości odbycia 12-dniowego szkolenia podstawowego oraz otrzyma dodatkowe punkty w rekrutacji do uczelni wojskowych. Po zakończeniu nauki w LOCSM Zamość absolwent otrzymuje zaświadczenie o ukończeniu szkolenia podpisane przed dowódcę jednostki patronackiej, które upoważnia do skorzystania z preferencyjnych warunków rekrutacji.  </p>
+                                <ul>
+                                    <li><span></span>Z zakresu technik i taktyk interwencji (sztuki walki), w ramach których przechodzą kurs samoobrony/li>
+                                    <li><span></span>Nauka strzelenia</li>
+                                    <li><span></span>Musztra</li>
+                                    <li><span></span>Szkolenie z pilotaży bezzałogowych statków powietrznych</li>
+                                    <li><span></span>Ratownictwo medyczne i ratownictwo pola walki</li>
+                                    <li><span></span>Obozy sportowo-obronne</li>
+                                    <li><span></span>Zajęcia z zakresu survivalu</li>
+                                    <li><span></span>Zajęcia zawierające elementy szkolenia bojowego</li>
+                                </ul>
+                                <h2>PERSPEKTYWY</h2>
+                                <p>
+                                    Uczeń kończący szkolenie w ramach klasy wojskowej OPW ma możliwość odbycia <span class="tekst">12-dniowego
+                                    szkolenia podstawowego zamiast 30-dniowiego</span> oraz otrzyma <span class="tekst2">dodatkowe punkty w rekrutacji do
+                                    uczelni wojskowych</span>. Po zakończeniu nauki w LOCSM Zamość absolwent otrzymuje <span class="tekst">zaświadczenie o
+                                    ukończeniu szkolenia</span> podpisane przed dowódcę jednostki patronackiej, które upoważnia do skorzystania
+                                    z <span class="tekst2">preferencyjnych warunków rekrutacji do służby</span>. Absolwenci LOCSM Zamość przystępują do
+                                    egzaminu maturalnego a następnie mogą wziąć udział w procesie rekrutacji na kierunki wojskowe w:
+                                </p>
+                                <ul>
+                                    <li><span></span>Akademii Marynarki Wojskowej</li>
+                                    <li><span></span>Akademii Wojsk Lądowych</li>
+                                    <li><span></span>Wojskowej Akademii Technicznej</li>
+                                </ul>
+                                <h2>Służba w wojsku zapewnia:</h2>
+                                <ul>
+                                    <li><span></span>Stabilność finansową</li>
+                                    <li><span></span>Możliwość podnoszenia kwalifikacji poprzez udział w szkoleniach krajowych i zagranicznych</li>
+                                    <li><span></span>Gwarancję zakwaterowania w mieszkaniu służbowym, miejscowym internacie lub comiesięczne świadczenie mieszkaniowe</li>
+                                    <li><span></span>Dodatki do wynagrodzenia zasadniczego (służbowe, specjalne, stażowe)</li>
+                                    <li><span></span>Dodatek za rozłąkę</li>
+                                    <li><span></span>Nagrody uznaniowe</li>
+                                    <li><span></span>Trzynastą pensję</li>
+                                    <li><span></span>Odprawę po zwolnieniu ze służby</li>
+                                    <li><span></span>Prawo do zapomogi w sytuacjach losowych</li>
+                                    <li><span></span>Nabycie świadczeń emerytalnych po 25 latach służby</li>
+                                </ul>
+                            </div>
+                    </div>
                 </div>
-                <ul>
-                    <li><span></span>Autorski program</li>
-                    <li><span></span>Programowanie elektroniki</li>
-                    <li><span></span>Mechanika lotnictwa</li>
-                    <li><span></span>Nawigacja (przygotowanie i lot)</li>
-                    <li><span></span>współpraca z jednostkami (25 Batalion LPOT, 2 LBOT, 3 Batalion Zmechanizowany w Zamościu, Politechnika Krakowska, AGH, PWSZ w Rzeszowie, LAW w Dęblinie</li>
-                    <li><span></span>nauczyciele, inżynierowie z m. in. Technikum Programistyczno-Robotycznego New Technology i Młodzieżowych Drużyn Robotycznych</li>
-                </ul>
+                <div class="poli">
+                    <i class="demo-icon icon-police"></i>
+                    <div>
+                        <h4>Klasa <span>Policyjna</span></h4>
+                        <p>
+                            <p>Jeżeli jesteś odpowiedzialny, bezkompromisowy oraz lojalny to znaczy, że masz cechy cenione w policji i klasa o tym profilu <span>jest dla Ciebie</span>.</p>
+                        </p>
+                        <button class="moreee" id="openModal2">Dowiedz się więcej</button>
+                    </div>
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close">
+                                <span class="x"></span>
+                            </span>
+                            <h1>Klasa Policyjna</h1>
+                            <p>Uczniowie klas policyjnych LOCSM Zamość biorą udział w zajęciach praktycznych i szkoleniowych
+                                prowadzonych w ramach <span class="tekst2">zajęć innowacyjnego przedmiotu “Edukacja policyjna”</span>. Program tego
+                                przedmiotu został stworzony przez funkcjonariuszy policji na potrzeby kształcenia przyszłych kadetów.</p>
+                                <p><span class="tekst2">W czasie czteroletniego cyklu nauczania młodzież klasy policyjnej uczestniczy w:</span></p>
+                                <ul>
+                                    <li><span></span>230 godzinach zajęć z edukacji policyjnej, w tym 53 godzinach zajęć teoretycznych i 177 godzinach zajęć praktycznych</li>
+                                    <li><span></span>Obowiązkowych zajęciach z taktyki i technik interwencji</li>
+                                    <li><span></span>Biorą udział w obozie szkoleniowym</li>                                    
+                                </ul>
+                                <h2>Uczniowie zyskują wiedzę z zakresu:</h2>
+                                <ul>
+                                    <li><span></span>Struktury i hierarchicznościi policji</li>
+                                    <li><span></span>Zakresem działań policjantów pionu prewencji</li>
+                                    <li><span></span>Etapami postępowania kwalifikacyjnego</li>
+                                    <li><span></span>Elementami prawa karnego</li>
+                                    <li><span></span>Zasadami użycia broni palnej i przymusu bezpośredniego, z wykorzystaniem sprzętu znajdującego się w dyspozycji szkoły</li>
+                                    <li><span></span>Podstawami działań pododdziałów zwartych policji</li>
+                                    <li><span></span>Kryminalistyki i zabezpieczenia śladów na miejscu przestępstwa; posiadamy jedyną w regionie profesjonalną pracownię kryminalistyki</li>
+                                    <li><span></span>Zajęć praktycznych, w czasie których wykorzystywany jest sprzęt ze szkolnej pracowni kryminalistycznej</li>
+                                                                     
+                                </ul>
+                                <p class="tekst2">W czasie nauki w LOCSM Zamość młodzież bierze udział w: </p>
+                                <ul>
+                                    <li><span></span>Ćwiczeniach na policyjnym torze sprawnościowym zajęciach z zakresu technik i taktyk interwencji</li>
+                                    <li><span></span>Szkoleniu strzeleckim</li>
+                                    <li><span></span>Zajęciach z musztry</li>
+                                    <li><span></span>Zajęciach z zakresu sztuk walki</li>
+                                    <li><span></span>Praktycznych zajęciach z podstaw kryminalistyki</li>
+                                    <li><span></span>Obozach survivalowych</li>
+                                    <li><span></span>Szkoleniu z pilotażu bezzałogowych statków powietrznych</li>                                    
+                                </ul>
+                                <h2>PERSPEKTYWY</h2>
+                                <p>
+                                    Absolwenci LOCSM Zamość zyskują wiedzę i umiejętności przydatne im w podjęciu przyszłej służby.
+                                    <span class="tekst2">Dodatkowo otrzymują gwarantowane 7 punktów w procesie rekrutacji do Policji</span>. Mogą przystąpić
+                                    do egzaminu maturalnego a następnie wziąć udział w procesie rekrutacji do szkół policyjnych:                                </p>
+                                <ul>
+                                    <li><span></span>Wyższej Szkoły Policji w Szczytnie</li>
+                                    <li><span></span>Szkoły Policji w Katowicach</li>
+                                    <li><span></span>Szkoły Policji w Pile</li>
+                                    <li><span></span>Szkoły Policji w Słupsku</li>
+                                    <li><span></span>Centrum Szkolenia Policji w Legionowie</li>    
+                                    <li><span></span>Ośrodka szkoleniowego dla policjantów w Sieradzu.</li>                                
+                                </ul>
+                                <h2>Służba w Policji zapewnia:</h2>
+                                <ul>
+                                    <li><span></span>Możliwość pozyskania pracy niezależnie od posiadanego doświadczenia zawodowego</li>
+                                    <li><span></span>Stabilność zatrudnienia</li>
+                                    <li><span></span>Gwarancję stałych warunków pracy</li>
+                                    <li><span></span>Precyzyjny system wynagrodzenia (m.in. 13-sta pensja, równoważnik za umundurowanie)</li>
+                                    <li><span></span>Możliwość rozwoju zawodowego</li>
+                                    <li><span></span>Różnorodny system szkoleń</li>
+                                    <li><span></span>Rozbudowany system socjalny</li>
+                                    <li><span></span>Dofinansowanie do wypoczynku dla funkcjonariuszy i rodzin</li>
+                                    <li><span></span>Równoważnik za brak lokalu mieszkalnego</li>
+                                    <li><span></span>Pokrycie kosztów dojazdu do pracy</li>
+                                    <li><span></span>Po 25 latach służby nabycie praw emerytalnych</li>                                    
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="gra">
+                    <i class="demo-icon icon-map"></i>
+                    <div>
+                        <h4>Klasa <span>Straż Graniczna</span></h4>
+                        <p>
+                            Odwaga, siła i odpowiedzialność to cechy każdego pogranicznika. Jeżeli chciałbyś znaleźć się w tym gronie to <span>nauka w LO CSM Zamość na profilu straż graniczna może Ci to ułatwić.</span>
+                        </p>
+                        <button class="moreee" id="openModal3">Dowiedz się więcej</button>
+                    </div>
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close">
+                                <span class="x"></span>
+                            </span>
+                            <h1>Klasa Straż Graniczna</h1>
+                            <p>
+                                <span class="tekst">W czasie czteroletniego cyklu nauczania młodzież klasy straży granicznej uczestniczy w:</span></p>
+                                    <ul>
+                                        <li><span></span>230 godzinach zajęć z zakresu edukacji straży granicznej, w tym 53 godzinach zajęć teoretycznych i 177 godzinach zajęć praktycznych</li>
+                                        <li><span></span>Biorą udział w obowiązkowych zajęciach z taktyki i technik interwencji</li>
+                                        <li><span></span>Biorą udział w obozie szkoleniowym</li>
+                                    </ul>
+                                <p><span class="tekst2">W ramach autorskiego i innowacyjnego programu nauczania stworzonego przez funkcjonariuszy SG
+                                    uczeń LOCSM Zamość zdobywa wiedzę praktyczną i teoretyczną, która będzie stanowiła atut podczas
+                                    pierwszego etapu rekrutacji do SG z zakresu:</span></p>
+                                <ul>
+                                    <li><span></span>Procesu rekrutacji do SG (test sprawności fizycznej, badania psychotechniczne)</li>
+                                    <li><span></span>Pracy funkcjonariuszy, którą zdobywa w czasie wyjazdów na placówki SG</li>
+                                    <li><span></span>Pilotażu bezzałogowych statków powietrznych (drony)</li>
+                                    <li><span></span>Funkcjonowania oddziałów i placówek straży granicznej</li>
+                                    <li><span></span>Stosowania metod łączności</li>
+                                    <li><span></span>Musztry indywidualnej i zespołowej</li>
+                                    <li><span></span>Przeszkolenia strzeleckiego z broni krótkiej i długiej</li>
+                                    <li><span></span>Technik i taktyk interwencji (sztuki walki) z wykorzystaniem środków przymusu bezpośredniego</li>
+                                    <li><span></span>Survivalu</li>
+                                    <li><span></span>Technik kryminalistyki - zabezpieczenia śladów, <strong>posiadamy jedyną w regionie profesjonalną pracownię kryminalistyki</strong></li>                                    
+                                </ul>
+                                <h2>PERSPEKTYWY:</h2>
+                                <p>Absolwenci LOCSM Zamość mogą przystąpić do procesu rekrutacji do służby w Straży Granicznej
+                                    korzystając ze zdobytej wiedzy oraz umiejętności. W czasie <strong>rozmowy kwalifikacyjnej</strong> młodzież może
+                                    wykazać się wstępnym przeszkoleniem, co będzie atutem na tym etapie rekrutacji. <span class="tekst2">Absolwent LOCSM
+                                    Zamość może ubiegać się o przyjęcie do służby:</span></p>
+                                    <ul>
+                                        <li><span></span>Pełnionej na placówkach SG w bezpośredniej ochronie granicy państwowej</li>
+                                        <li><span></span>Na przejściach granicznych (drogowe, lotnicze) realizując zadania z zakresu kontroli ruchu granicznego</li>
+                                        <li><span></span>W charakterze prowadzenia kontroli legalności pobytu oraz legalności zatrudnienia cudzoziemców na terenie RP</li>
+                                        <li><span></span>W pododdziałach specjalistycznych realizujących zabezpieczenie działań prowadzonych przez inne jednostki organizacyjne SG</li>                                        
+                                    </ul>
+                                    <h2>Służba w SG zapewnia:</h2>
+                                    <ul>
+                                        <li><span></span>Stabilne zatrudnienie</li>
+                                        <li><span></span>Gwarancję zakwaterowania lub comiesięczny ekwiwalent do zakupu własnego lokalu</li>
+                                        <li><span></span>Dodatki do uposażenia</li>
+                                        <li><span></span>Dofinansowanie do wypoczynku</li>
+                                        <li><span></span>Możliwość awansu na macy przepisów prawa</li>
+                                        <li><span></span>Uprawnienia emerytalne po 25 latach służby</li>
+                                    </ul>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wyroznienie">
+            <img src="images/wyroznienie.png" alt="tlo" id="backkk">
+        </div>
+        <div class="dronyBlock">
+            <img src="images/DRONY.png" alt="tlo dron" id="drony">
+        </div>
+        <div class="najlepsi">
+            <h3>Uczymy się od najlepszych...</h3>
+            <p>Profesjonalna kadra prowadząca zajęcia specjalistyczne w ramach edukacji poszególnych oddziałów.<br><span class="tekst">W jej skład wchodzą oficerowie i specjaliści:</span></p>
+            <div class="oficerowie">
+                    <div>
+                        <span></span>
+                        <p>Wojska Polskiego</p>
+                    </div>
+                    <div>
+                        <span></span>
+                        <p>Policji</p>
+                    </div>
+                    <div>
+                        <span></span>
+                        <p>Straży Granicznej</p>
+                    </div>
+                    <div>
+                        <span></span>
+                        <p>Sztuk Walki</p>
+                    </div>
+                </div>
+                <div class="mundurowa">
+                    <video controls>
+                        <source src="images/mundurowka.mp4" type="video/mp4">
+                        <source src="images/mundurowka.mp4" type="video/ogg">
+                    </video>
+                </div>
+        </div>
+        <div class="wspol">
+                <h3>...oraz współpracujemy z:</h3>
+                <div class="content-box">
+                    <!-- <button id="prevBtn"><i class="demo-icon icon-angle-double-left"></i></button> -->
+                    <div class="content-child">
+                        <img src="images/wspolprace1.png" alt="Projekt 1">
+                        <img src="images/wspolprace2.png" alt="Projekt 2">
+                        <img src="images/wspolprace3.png" alt="Projekt 3">
+                        <img src="images/wspolprace4.png" alt="Projekt 4">
+                        <img src="images/wspolprace5.png" alt="Projekt 4">
+                    </div>
+                    <!-- <button id="nextBtn"><i class="demo-icon icon-angle-double-right"></i></button> -->
+                </div>    
+            </div>
+            <div class="kadra">
+                <div class="tekstKadra">
+                    <h3>Nasza</h3>
+                    <h2>KADRA</h2>
+                    <p>Poznaj naszych nauczycieli.</p>
+                </div>
+                <div class="tiktokKadra">
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@locsm_zamosc/video/7379477650777132320" data-video-id="7379477650777132320" style="max-width: 805px;min-width: 405px;" > <section> <a target="_blank" title="@locsm_zamosc" href="https://www.tiktok.com/@locsm_zamosc?refer=embed">@locsm_zamosc</a> Parę pytań do naszych nauczycieli 😁 Sprawdź to! <a title="nauczyciel" target="_blank" href="https://www.tiktok.com/tag/nauczyciel?refer=embed">#nauczyciel</a> <a title="nauczycielka" target="_blank" href="https://www.tiktok.com/tag/nauczycielka?refer=embed">#nauczycielka</a> <a title="teacher" target="_blank" href="https://www.tiktok.com/tag/teacher?refer=embed">#teacher</a> <a title="dc" target="_blank" href="https://www.tiktok.com/tag/dc?refer=embed">#dc</a> <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> <a title="dlaciebie" target="_blank" href="https://www.tiktok.com/tag/dlaciebie?refer=embed">#dlaciebie</a> <a title="szkola" target="_blank" href="https://www.tiktok.com/tag/szkola?refer=embed">#szkola</a> <a title="zamosc" target="_blank" href="https://www.tiktok.com/tag/zamosc?refer=embed">#zamosc</a> <a title="locsm" target="_blank" href="https://www.tiktok.com/tag/locsm?refer=embed">#locsm</a> <a title="pytanie" target="_blank" href="https://www.tiktok.com/tag/pytanie?refer=embed">#pytanie</a> <a title="sonda" target="_blank" href="https://www.tiktok.com/tag/sonda?refer=embed">#sonda</a> <a target="_blank" title="♬ dźwięk oryginalny - LOCSM_ZAMOSC" href="https://www.tiktok.com/music/dźwięk-oryginalny-7379477770574908192?refer=embed">♬ dźwięk oryginalny - LOCSM_ZAMOSC</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                </div>
+            </div>
+            <div class="akcja">
+                <h3 class="akc">MUNDURÓWKA W AKCJI</h3>
+                <div class="collage">
+                    <div class="photo-container">
+                        <img src="images/zdjecie1.jpg" alt="Zdjęcie 1">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie2.jpg" alt="Zdjęcie 2">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie3.jpg" alt="Zdjęcie 3">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie4.jpg" alt="Zdjęcie 4">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie5.jpg" alt="Zdjęcie 5">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie6.jpg" alt="Zdjęcie 6">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie7.jpg" alt="Zdjęcie 7">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie8.jpg" alt="Zdjęcie 8">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie9.jpg" alt="Zdjęcie 9">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie11.jpg" alt="Zdjęcie 11">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie12.jpg" alt="Zdjęcie 12">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie13.jpg" alt="Zdjęcie 13">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie14.jpg" alt="Zdjęcie 14">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie15.jpg" alt="Zdjęcie 15">
+                    </div>
+                    <div class="photo-container">
+                        <img src="images/zdjecie16.jpg" alt="Zdjęcie 16">
+                    </div>
+                </div>
             </div>
             <div class="social">
                 <h4>Poznaj nas w <span class="mediaSoc">SOCIAL MEDIACH</span></h4>
@@ -91,8 +446,39 @@
                     </a>
                 </div>
             </div>
-        </div>
     </main>
+    <i class="demo-icon icon-angle-double-up" id="scrollToTopBtn"></i>
+    <footer id="kontakt">
+        <div class="left">
+            <h3>Kontakt:</h3>
+            <div>
+                <i class="demo-icon icon-location"></i>
+                <p>Szczebrzeska 102, Zamość</p>
+            </div>
+            <div>
+                <i class="demo-icon icon-phone"></i>
+                <p>797 008 561</p>
+            </div>
+            <div>
+                <i class="demo-icon icon-table"></i>
+                <p>zamosc@locsm.pl, sekretariat.zamosc@locsm.edu.pl</p>
+            </div>
+            <h3>Godziny, w których pracujemy:</h3>
+            <div>
+                <i class="demo-icon icon-clock"></i>
+                <p>pn-pt: 8.00-15.00</p>
+            </div>
+        </div>
+        <div class="right">
+            <h3>Numer konta:</h3>
+            <p>05 1090 2590 0000 0001 4778 4742</p>
+            <h3>Administracja szkoły:</h3>
+            <div>
+                <i class="demo-icon icon-phone"></i>
+                <p>690 108 659</p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
