@@ -763,7 +763,9 @@
 .media-ic a:hover img {
   transform: scale(1.1); /* Efekt po najechaniu */
 }
-
+footer>div>p>i{
+  margin-right: 10px;
+}
 
 footer#footer {
   border-top: 1px solid #ffffff9d;
@@ -891,8 +893,47 @@ footer#footer {
   width: 100%;
 }
 
+.wspolpraca{
+  width: 100%;
+  padding: 5% 10%;
+  position: relative;
+  text-align: center;
+}
+.wspolpraca>h2::before{
+  content: '';
+  background-color: #fff;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 5px;
+  color: #fff;
+  position: absolute;
+}
+.wspolpraca>h2{
+    font-size: 40px;
+    position: relative;
+    color: #00e0f0;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+}
+
+.wspolpraca>p{
+    font-size: 18px;
+    color: #fff;
+}
+.wspolpraca>img{
+  margin-top: 20px;
+  width: 100%;
+}
+
+
 @media (max-width: 900px){
   .media-abs{
  display: none;
+}
+
+.wspolpraca{
+  padding: 5% 5%;
 }
 }
