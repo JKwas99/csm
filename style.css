@@ -937,3 +937,52 @@ footer#footer {
   padding: 5% 5%;
 }
 }
+
+
+.section {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+/* Kierunki wejścia */
+.section-right {
+    transform: translateX(100px);
+}
+.section-left {
+    transform: translateX(-100px);
+}
+.section-bottom {
+    transform: translateY(100px);
+}
+.section-top {
+    transform: translateY(-100px);
+}
+
+/* Widoczna */
+.section.visible {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+}
+
+
+#scrollToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #00e1ff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 20px;
+    border: 2px solid #000000;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+#scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+}

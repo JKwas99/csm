@@ -143,13 +143,13 @@
     font-size: 12px;
 }
 .wojskowa_klasa{
-    background-image: url('grafika/zolnierz.png');
+    background-image: url('grafika/wojskowa.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .mundurowa_klasa{
-    background-image: url('grafika/mundurowa.png');
+    background-image: url('grafika/mundurowa.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
