@@ -1,758 +1,233 @@
-@media (min-width:0px) and (max-width:799px){
-    .mundurowa{
-        width: 100%;
-        text-align: center;
-        position: relative;
-        left: 0;
-    }
-    .mundurowa>video{
-        width: 80%!important;
-    }
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px;
-        background: #0C0C0C;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #b3ff01;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: #b3ff01;
-    }
-    .infoAK{
-        width: 100%;
-        text-align: center;
-    }
-    .infoAK>div{
-        width: 300px;
-        height: 300px;
-        margin: 30px;
-    }
-    .infoAK>div::before{
-        content: '';
-        width: 20px;
-        height: 20px;
-        background-color: rgb(15,15,15);
-        border-radius: 50%;
-        z-index: 12;
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .infoAK>div{
-        color: rgb(15,15,15);
-        position: relative;
-        background-image: repeating-linear-gradient(
-            -45deg,
-            #92cf02,
-            #92cf02 30px,
-            #b3ff01 30px,
-            #b3ff01 60px
-          );
-        border: 2px solid #030303a8;
-        filter: drop-shadow(10px 10px 0px #1495ffbe);
-    }
-    .infoAK>div>h3{
-        font-size: 3em;
-        margin: 25px 0 0 0;
-    }
-    .infoAK>div>p{
-        font-size: 25px;
-        margin: 10px;
-        font-weight: bold;
-    }
-    .infoAK>div>a:hover{
-        color: #1495ff;
-    }
-    .infoAK>div>a{
-        font-size: 25px;
-        text-decoration: none;
-        color: #0d0e0d;
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .ak>h4{
-        margin-top: 10px;
-        font-size: 4em;
-        margin-bottom: 10px;
-        color: #b3ff01;
-    }
-    .ak{
-        padding-top: 5px;
-        padding-bottom: 30px;
-        width: 100%;
-        text-align: center;
-        /* background-image: repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 30px,
-            rgb(26, 25, 25) 30px,
-            rgb(26,26,26)60px
-          ); */
-    }
-    .hamburger{
-        z-index: 22;
-        padding: 0px;
-        cursor: pointer;
-        display: inline-block;
-        background-color: transparent;
-        border: 0;
-        outline: 0;
-        margin: 0 0px;
-        position: absolute;
-        top: 15px!important;
-        right: 0px!important;
-    }
-    body{
-        background-color: #0C0C0C;
-        padding: 0px 0px;
-        width: 100vw;
-        overflow-x: hidden!important;
-        font-family: "Prompt", sans-serif;
-        margin: 0;
-    }
-    .logo{
-        position: absolute;
-        top: 30px;
-        left: 50px;
-        z-index: 5;
-    }
-    .logo>img{
-        width: 120px;
-        position: absolute;
-        z-index: 5;
-    }
-    .text-header{
-        width: 100%;
-        top: 0;
-        position: absolute;
-        height: 100vh;
-        background-color: rgb(12, 12, 12, 0.6);
-        color: #EEEEEE;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .desc-text{
-        padding: 25vh 0 0 0;
-        font-size: 37px;
-        text-align: center;
-        display: block;
-        width: 100%;
-        font-weight: 750;
-    }
-    .desc-in{
-        font-size: 25px;
-        letter-spacing: 5px;
-        margin: 2px;
-        color: #b3ff01;
-        font-weight: 600;
-    }
-    #specjal{
-        font-size: 18px!important;
-    }
-    #poznaj{
-        position:absolute;
-        bottom: 3%;
-        margin: 30px 30px 30px 30px;
-        display: inline-block;
-        text-decoration: none;
-        font-size: 15px;
-        left: 42%;
-        transform: translateX(-50%);
-        padding: 8px 25px;
-        color: #EEEEEE;
-        border: 2px solid #1495ff;
-        transition: all .2s linear;
-        background-color: #0000009d;
-    }
-    #poznaj:hover{
-        background-color: #18171780;
-        color: #FFF7FC;
-        transition: all .2s linear;
-        border: 2px solid #003d6e;
-    }
+  @media (min-width: 769px) {
     header{
-       width: 100vw;
-       background-image: url(images/download2.png); 
-       height: 100vh;
-       background-repeat: no-repeat;
-       background-size: cover;
-       transition: background-image 1s ease-in-out;
+        padding: 20px 10%;
     }
-    .menu{
-        position: absolute;
-        right: 60px;
-        top: 20px;
+  .fullscreen-menu {
+    position: relative;
+    height: auto;
+    background: transparent;
+    flex-direction: row;
+    justify-content: flex-end; /* albo center */
+    align-items: center;
+    opacity: 1;
+    pointer-events: all;
+    gap: 20px;
+  }
+
+  .fullscreen-menu a {
+    font-size: 18px; /* mniejsze niż fullscreen */
+  }
+
+  .hamburger {
+    display: none; /* hamburger tylko na mobile */
+  }
+}
+
+  .fullscreen-menu a:hover {
+    color: #00e0f0;
+  }
+
+  @media (max-width: 768px) {
+    .main-box {
+        transform: translateY(-14vh);}
+
+
+    nav ul {
+      display: none;
     }
-    .menu>ul{
-        list-style-type: none;
-        text-decoration: none;
-        color: #EEEEEE;
+
+    .hamburger {
+      display: flex;
     }
-    .menu>ul>a{
-        color: #ececec;
-        font-size: 15px;
-        text-decoration: none;
-        margin: 10px;
+
+    .main-box>.text>p{
+    font-size: 5vw;
     }
-    .menu>ul>a:hover{
-        color: #8bd64e;
+    .main-box>.text>h1{
+        font-size: 9vw;
+        letter-spacing: 5px;
+        font-family: "Black Ops One", system-ui;
+        color: #00e0f0;
+        font-weight: 400;
     }
-    .hamburger{
-        display: none;
+    .main-box>.text>h2{
+        font-size: 6vw;
     }
-    .filmik{
-        margin-left: 0!important;
-        background-image: radial-gradient(rgb(20, 149, 255) 1px, transparent 0);
-        background-size: 50px 50px;
-        background-position: -19px -19px;
-        padding: 60px 0px 100px 0px;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        text-align: center;
-    }
-    .filmik>div{
-        width: 100%;
-    }
-    .filmik>div:nth-child(1){
-        text-align: center
-    }
-    .filmik>div:nth-child(2){
-        text-align: left;
-        width:90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .filmik>div>h3{
-        font-size: 20px;
-        color: #eeeeee;
-        margin: 12px 0px;
-    }
-    .filmik>div>iframe{
-        width: 80%;
-    }
-    .filmik>div>ul>li{
-        font-size: 15px;
-        margin: 15px;
-        list-style-type: none;
-        position: relative;
-        color: #eeeeee;
-    }
-    .filmik>div>ul>li>span{
-        width: 25px;
-        height: 25px;
-        background-color: #b3ff01!important;
-        filter: drop-shadow(2px 2px 0px #000000);
-        position: absolute;
-        top: 0;
-        left: -55px;
-    }
-    .active-menu{
-        color: #b3ff01!important;
-        border-bottom: 2px solid #b3ff01;
-        padding-bottom: 5px;
-        font-weight: bold;
-    }
-    .kierunki{
-        padding: 20px 0px 50px 0px;
-        background: repeating-linear-gradient(
-            45deg,
-            #0C0C0C,
-            #0C0C0C 50px,
-            rgb(139, 214, 78, 0.3) 50px,
-            rgb(139, 214, 78, 0.3) 51px
-          );
-    }
-    .kierunki-h3{
-        font-size: 50px;
-        width: 80%;
-        margin: 20px;
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: left;
-        color: #EEEEEE;
-        position: relative;
-    }
-    .kierunki-h3::after{
-        content: '';
-        width: 50px;
-        height: 2px;
-        background-color: #b3ff01;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        animation-name: long;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-    }
-    @keyframes long {
-        0%{
-            width: 50px;
-        }
-        50%{
-            width: 200px;
-        }
-        100%{
-            width: 50px;
-        }
-    }
-    .kierunki-box{
-        width: 100%;
-    }
-    .kierunki-box>div{
-        text-align: center;
-        width: 100%;
-        margin: 5px 0px;
-        /* border-bottom: 3px solid #b3ff01; */
-        padding: 90px 0px;
-        position: relative;
-    }
-    .kierunki-box>div>i{
-        font-size: 100px;
-        color: #b3ff01;
-    }
-    .kierunki-box>div>div>h4>span{
-        color: #b3ff01;
-    }
-    .kierunki-box>div>div>h4{
-        font-size: 25px;
-        color: #EEEEEE;
-        margin: 10px;
-    }
-    .kierunki-box>div>div>p{
-        font-size: 15px;
-        margin: 5px 10px 20px 10px;
-        color: #EEEEEE;;
-    }
-    .kierunki-box>div>div>p>span{
-        color: #1495ff;
-    }
-    .moreee{
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-60%);
-        text-align: center;
-        font-size:15px;
-        padding: 10px 20px;
-        color: #EEEEEE;
-        font-weight: bold;
-        margin: 20px;
+
+    #kierunki{
         background-color: transparent;
-        border: 2px solid #1495ff;
-        cursor: pointer;
-        transform: all .3s linear;
-    }
-    .moreee:hover{
-        background-color: #1495ff;
-        color: #EEEEEE;
-    }
-    .letL{
-        font-size: 45px;
-        color: #1495ff;
-    }
-    .modal {
-        display: none; /* Ukryj modal domyślnie */
-        position: fixed; /* Ustaw modal nad inną zawartością */
-        z-index: 20; /* Ustaw z-index (poziom) modala */
-        left: 0;
-        top: 0;
-        width: 100vw; /* Pełna szerokość */
-        height: 100%; /* Pełna wysokość */
-        overflow: auto; /* Włącz przewijanie, jeśli jest to konieczne */
-        background-color: rgba(0,0,0,0.9); /* Czarny z przezroczystością */
-    }
-    
-    /* Modal (zawartość) */
-    .modal-content {
-        margin: 10% auto; /* 10% od góry i wyśrodkowane */
-        padding: 20px;
-        width: 80%; /* Szerokość modala */
-        color: #EEEEEE;
-        text-align: left;
-    }
-    
-    /* Nagłówek modala */
-    .modal-content h1 {
-        font-size: 25px;
-        color: #b3ff01;
-        margin-bottom: 10px;
-    }
-    .modal-content h2{
-        font-size: 22px;
-        color: #b3ff01;
-        margin-bottom: 10px;
-    }
-    .modal-content p {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-    .modal-content li{
         font-size: 15px;
-    }
-    .close{
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 50px;
-        right: 50px;
+        border: 1px solid #00e0f0;
+        outline: none;
+        color: #00e0f0;
+        padding: 10px 30px;
         cursor: pointer;
-    }
-    /* Przycisk zamykający modal */
-    .x {
-        position: absolute;
-        width: 40px;
-        height: 2px;
-        top: 50%;
-        transform: rotate(45deg);
-        background-color: #b3ff01;
-        float: right;
-        font-size: 40px;
-        font-weight: bold;
-    }
-    .x::after{
-        content: '';
-        width: 40px;
-        height: 2px;
-        transform: rotate(-90deg);
-        background-color: #b3ff01;
-        float: right;
-        font-size: 40px;
-        font-weight: bold;
-    }
-    .tekst{
-        color: #b3ff01;
-        font-weight: bold;
-    }
-    .tekst2{
-        color: #1495ff;
-        font-weight: bold;
-    }
-    .najlepsi{
-        width: 100%;
-        box-sizing: border-box;
-        padding: 100px 10% 100px 10%;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: repeating-linear-gradient(90deg, #0C0C0C, #0C0C0C 30px, #141414 30px, #141414 60px);
-    }
-    .najlepsi>h3{
-        font-size: 50px;
-        margin-bottom: 20px;
-        color: #1495ff;
-    }
-    .najlepsi>p{
-        font-size: 18px;
-        margin-bottom: 20px;
-        color: #EEEEEE;
-    }
-    .oficerowie{
-        width: 100%;
-    }
-    .oficerowie>div{
-        margin:80px 50px 30px 50px;
-        position: relative;
-        text-align: center;
-    }
-    .oficerowie>div>span{
-        position: absolute;
-        display: block;
-        top: -50px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 40px;
-        height: 40px;
-        background-image: linear-gradient(to right, #2196F3 50%, #0b5577 50%);
-        border: 2px solid #1495ff;
-        border-radius: 50%;
-    }
-    .oficerowie>div>p{
-        font-size: 22px;
-        color: #EEEEEE;
-    }
-    .wspol{
-        width: 80%;
-        padding: 20px 10% 50px 10%;
-        background: repeating-linear-gradient(
-            45deg,
-            #0C0C0C,
-            #0C0C0C 50px,
-            #1495ff6c 50px,
-            #1495ff6c 51px
-          );
-    }
-    .wspol>h3{
-        text-align: right;
-        font-size: 40px;
-        color: #b3ff01;
-        margin-bottom: 10px;
-    }
-    .moveBox{
-        list-style: none;
-        padding: 0;
-        width: 100%;
-        height: 45vh;
-        margin: 0;
-        display: flex;
-        justify-content: right;
-        position: relative;
-        flex-wrap: wrap;
-        text-align: right;
-        margin-bottom: 50px;
-    }
-    .moveBox::before{
-        content: "WSPÓŁPRACA";
-        position: absolute;
-        bottom: -10%;
-        left: -10%;
-        font-size: 15em;
-        color: #b3b3b32a;
-        font-weight: 900;
-        z-index: -1;
-    }
-    .moveBox>li{
-        color: #EEEEEE;
-        font-size: 20px;
-        padding: 10px;
-        cursor: pointer;
-        text-align: right;
-        font-size: calc(10px + 1vw); /* Rozmiar czcionki zależny od szerokości widoku */
-    }
-    .moveBox>li:hover{
-        background-color: #b3b3b32a!important;
-    }
-    .akc{
-        text-align: center;
-        font-size:40px;
-        box-sizing: border-box;
-        width: 100%;
-        letter-spacing: 10px;
-        color: #b3ff01;
-        margin: 50px 0px;
-    }
-    .collage {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px; /* Odstęp między zdjęciami */
-        max-width: 100vw; /* Maksymalna szerokość kolażu */
-    }
-    
-    .photo-container {
-        width: calc(33% - 10px); /* Szerokość kontenera, uwzględniając odstępy (3 zdjęcia w rzędzie) */
-        height: auto; /* Ustalona wysokość dla wszystkich zdjęć */
-        overflow: hidden; /* Ukrycie części zdjęcia po powiększeniu */
-        position: relative;
-    }
-    
-    .photo-container img {
-        width: 100%;
-        height: 100%; /* Dopasowanie do kontenera */
-        object-fit: cover; /* Przycinanie obrazu, aby wypełnić kontener */
-        transition: transform 0.3s ease-in-out; /* Dodanie przejścia */
-    }
-    
-    .photo-container img:hover {
-        transform: scale(1.1); /* Powiększenie zdjęcia */
-    }
-    .mediaSocial{
-        display: flex;
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
-    }
-    .mediaSocial>a{
-        text-align: center;
-        width: 20%;
-        color: rgb(255, 247, 252);
-        text-decoration: none;
-        margin: 5px;
-    }
-    .mediaSocial>a:hover{
-        color: rgb(179, 255, 1);
-        cursor: pointer;
-    }
-    .mediaSocial>a>img{
-        height: 20px;
-        margin: 0px;
-    }
-    .mediaSocial>a>i{
-        font-size: 1em;
-        height: 140px;
-        text-align: center;
-    }
-    .mediaSocial>a>p{
-        margin: 5px;
-        font-size: 18px;
-    }
-    .social>h4{
-        font-size: 2em;
-        color: #FFF7FC;
-        text-align: center;
-        position: relative;
-    }
-    .mediaSoc{
-        color: #b3ff01;
-        filter: drop-shadow(3px 3px 0px #000000);
-        border-bottom: 2px solid #b3ff01;
-    }
-    .social{
-        width: 100%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    #backkk{
-        width: 100%;
-    }
-    #drony{
-        width: 100%;
-    }
-    footer{
-        margin-top: 100px;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    footer>div{
-        margin: 20px;
-    }
-    footer>div>h3{
-        font-size: 22px;
-        color: #1495ff;
-    }
-    footer>div>div{
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        color: #EEEEEE;
-    }
-    footer>div>div>i{
-        color: #b3ff01;
-        font-size: 20px;
-    }
-    footer>div>div>p{
-        font-size: 20px;
-        margin: 15px;
-    }
-    footer>div>p{
-        color: #EEEEEE;
-        font-size: 20px;
-        margin: 15px 0px;
-    }
-    footer>div>div>p:hover{
-        cursor: pointer;
-        color: #8bd64e;
-    }
-    footer>div>p:hover{
-        cursor: pointer;
-        color: #8bd64e;
-    }
-    .kadra{
-        width: 100vw;
-        background-image: radial-gradient(#8bd64e 1px, transparent 0);
-        background-size: 50px 50px;
-        background-position: -19px -19px;
-    }
-    .tekstKadra{
-        width: 100%;
-        box-sizing: border-box;
-        padding: 50px 10%;
-        text-align: center!important;   
-    }
-    .tekstKadra>h3{
-        font-size: 50px;
-        margin: 0;
-        color: #EEEEEE;
-    }
-    .tekstKadra>h2{
-        color: #b3ff01;
-        font-size: 50px;
-        margin: 0;
-    }
-    .tekstKadra>p{
-        font-size: 20px;
-        color: #EEEEEE;
-        display: block;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .tiktokKadra{
-        padding: 20px 0% 20px 0%;
-        background-color: inherit;
-    }
-    .tiktokKadra>blockquote{
-        background-color: inherit;
-    }
+        margin-top: 20px;
+    }   
+  }
 
-    .tiktok-embed>iframe{
-        height: 80vh!important;
-    }
 
-    
-    .content-box {
-        margin-top: 30px;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        display: flex;
-        height: 80%;
-        align-items: center;
-        justify-content: center;
-    }
-    .content-child {
-        width: 100%; /* Szerokość kontenera */
-        overflow: hidden; /* Ukrycie obrazów, które wychodzą poza ekran */
-        display: flex;
-    }
-    
-    .content-child img {
-        width: 60vw; /* Każdy obraz zajmuje całą szerokość okna */
-        flex-shrink: 0; /* Zapobiega zmniejszaniu obrazów */
-        animation: slide 30s linear infinite; /* Definicja animacji */
-    }
-    
-    @keyframes slide {
-        0% {
-            transform: translateX(0);
-        }
-        20% {
-            transform: translateX(-100%);
-        }
-        40% {
-            transform: translateX(-200%);
-        }
-        60% {
-            transform: translateX(-300%);
-        }
-        80% {
-            transform: translateX(-400%);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
-    .modal-content ul li{
-        font-size: 20px;
-        margin: 15px;
-        list-style-type: none;
-        position: relative;
-        color: #eeeeee;
-    }
-    .modal-content ul li span{
-        width: 35px;
-        height: 35px;
-        background-color: #b3ff01!important;
-        filter: drop-shadow(2px 2px 0px #000000);
-        position: absolute;
-        top: 0;
-        left: -55px;
-    }
+@media (max-width: 768px) {
+
+.top>p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.top>h2{
+    font-size: 35px;
+    font-family: "Black Ops One", system-ui;
+    color: #00e0f0;
+    font-weight: 400;
+}
+
+.kierunki{
+  position: relative;
+  width: 100%;
+  height: 160vh;
+  transform: translateY(-2vh);
+  overflow: hidden;
+  padding: 5% 10%;
+  color: #fff;
+}
+
+.kierunki-box{
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+.kierunki-box>div{
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #030303;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    height: 60vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 2px solid #ffffff;
+}
+.kierunki-box>div>img{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.kierunki-box>div>*{
+    z-index: 2;
+    position: relative;
+    color: #ffffff;
+}
+.kierunki-box>div::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000079;
+}
+.kierunki-box>div>h2{
+    font-size: 25px;
+    position: absolute;
+    bottom: 140px;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+}
+.kierunki-box>div>p{
+    position: absolute;
+    bottom: 100px;
+    font-size: 12px;
+}
+.wojskowa_klasa{
+    background-image: url('grafika/zolnierz.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mundurowa_klasa{
+    background-image: url('grafika/mundurowa.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.kierunki-box>div>a{
+    color: #000000;
+    background-color: #00e1ff;
+    padding: 8px 16px;
+    font-size: 14px;
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+}
+
+
+.nauka>.nauka-top{
+    width: 100%;
+    display: block;
+}
+
+.nauka>.nauka-top>.left{
+    width: 100%;
+}
+
+.nauka-top>.left>p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin: 6px 0;
+}
+.nauka-top>.left>h2{
+    font-size: 25px;
+    margin: 6px 0;
+    font-family: "Black Ops One", system-ui;
+    color: #00e0f0;
+    font-weight: 400;
+}
+
+.nauka-top>.left>h3{
+    font-size: 17px;
+    margin: 6px 0;
+}
+
+.right>a{
+    display: inline-block;
+    background-color: transparent;
+    font-size: 14px;
+    border: 2px solid #00e0f0;
+    outline: none;
+    color: #00e0f0;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: transparent;
+  font-size: 70px;
+  padding: 15px 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: -5px;
+  transform: translateY(80px);
+}
+
+.arrow.right {
+  right: -5px;
+  transform: translateY(80px);
+}
+
+
 }
