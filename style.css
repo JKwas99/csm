@@ -58,6 +58,43 @@
     background-color: #fff;
     transition: all 0.3s;
   }
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;          /* ← lista zaczyna się zaraz pod linkiem */
+  left: 0;
+  background-color: #000000;
+  list-style-type: none;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  z-index: 10;        /* ← upewnij się, że jest nad innymi elementami */
+}
+
+.dropdown-menu a {
+  color: #00e1ff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+  width: 100%;
+  text-align: left;
+}
+
+/* Hover: pokaż menu */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+
+
 
   /* Fullscreen menu */
   .fullscreen-menu {
@@ -1016,6 +1053,43 @@ footer#footer {
 
 
 @media (max-width: 900px){
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+
+}
+
+/* Styl głównego linka (Organizacja) – odziedziczy styl z .fullscreen-menu a */
+
+/* Menu rozwijane (początkowo ukryte) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  top: 20px;
+  left: -40px;
+  padding: 15px 10px;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+/* Styl linków w dropdownie */
+.dropdown-menu a {
+  color: #00e1ff;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+
 .wirtualny{
   padding: 5%;
   display: block;
