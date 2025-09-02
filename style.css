@@ -986,3 +986,30 @@ footer#footer {
     opacity: 1;
     visibility: visible;
 }
+
+
+.wirtualny{
+  padding: 5% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wirtualny>div{
+  width: 45%;
+}
+.wirtualny>div>video{
+  width: 50%;
+}
+.wirtualny>div>h2{
+   font-size: 60px;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    color: #00e0f0;
+}
+.wirtualny>div>h3{
+  color: #fff;
+}
+.wirtualny>div>p{
+  color: #f5f5f5;
+}

@@ -1,0 +1,174 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(10,10,10);
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+  }
+
+  header img {
+    height: 80px;
+  }
+
+
+  a{
+    color: #00e0f0;
+    text-decoration: none;
+}
+
+main{
+    padding: 20px 10%;
+    color: #fff;
+}
+
+h1{
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-family: "Black Ops One", system-ui;
+    color: #00e0f0;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+
+
+section{
+    margin: 50px 0;
+}
+
+
+
+
+
+
+
+
+footer>div>p>i{
+  margin-right: 10px;
+}
+
+footer#footer {
+  border-top: 1px solid #ffffff9d;
+  color: #f5f5f5;
+  margin: 0 10%;
+  padding: 5% 0%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Sekcje wewnątrz footera */
+#footer > div {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+/* Nagłówki */
+#footer h4 {
+  font-size: 20px;
+  margin: 25px 0;
+  color: #00e1ff;
+  font-weight: 600;
+  position: relative;
+}
+
+#footer h4 .arr {
+  margin-right: 6px;
+}
+
+/* Paragrafy */
+#footer p {
+  font-size: 16px;
+  margin: 15px 0px;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+/* Linki */
+#footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#footer a:hover {
+  color: #00e1ff;
+}
+
+/* Ikony mediów */
+.media-footer div {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.media-footer img {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(1); /* białe ikony */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.media-footer a:hover img {
+  transform: scale(1.1);
+  filter: brightness(0) saturate(100%) invert(68%) sepia(86%) saturate(2800%) hue-rotate(148deg) brightness(101%) contrast(101%);
+}
+
+/* Responsywność */
+@media (max-width: 900px) {
+  footer#footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #footer > div {
+    width: 100%;
+  }
+  .media-footer div {
+    justify-content: flex-start;
+  }
+
+  .social-media{
+  position: relative;
+  width: 100%;
+  transform: translateY(0vh);
+  overflow: hidden;
+  padding: 10% 10%;
+  color: #fff;
+  display: block;
+}
+
+.vid-info>iframe{
+ width: 100%;
+}
+
+.media-ic{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px; 
+  padding: 10px 0;
+}
+
+}
