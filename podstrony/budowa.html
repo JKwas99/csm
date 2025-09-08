@@ -1,0 +1,93 @@
+!<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="mobile.css" class="css">
+    <link rel="stylesheet" href="desig.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Fun:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="robots" content="index, follow" />
+    <title>Liceum Centrum Szkół Mundurowych</title>
+</head>
+<body>
+    <header>
+    <img src="logo.png" alt="Logo">
+    <a href="./index.html">Strona Główna</a>
+    </header>
+
+
+    <main style="text-align: center;">
+        <h1 style="color: white; margin-bottom: 50px;">Strona w budowie</h1>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar">0%</div>
+        </div>
+        <div class="percentage" id="percentage-text">0%</div>
+    </main>
+
+
+
+    <footer id="footer" class="section section-bottom">
+        <div class="left-footer">
+            <h4><span class="arr">&rarr;</span>Kontakt:</h4>
+            <p><i class="demo-icon icon-home"></i>ul. Szczebrzeska 102B, Zamość</p>
+            <p><i class="demo-icon icon-phone"></i>+48 797 008 561</p>
+            <p><i class="demo-icon icon-gmail"></i>sekretariat.zamosc@locsm.edu.pl</p>
+            <p><i class="demo-icon icon-gmail"></i>zamosc@locsm.pl</p>
+            <h4><span class="arr">&rarr;</span>Kontakt z Administracją Szkoły:</h4>
+            <p><i class="demo-icon icon-home"></i>ul. Szczebrzeska 102B, Zamość</p>
+            <p><i class="demo-icon icon-phone"></i>+48 690 108 659</p>
+            <h4><span class="arr">&rarr;</span>Godziny Otwarcia:</h4>
+            <p><i class="demo-icon icon-clock"></i>8:00-15:00</p>
+
+        </div>
+        <div class="right-footer">
+            <h4><span class="arr">&rarr;</span>Numer konta:</h4>
+            <p>05 1090 2590 0000 0001 4778 4742</p>
+            <h4><span class="arr">&rarr;</span>Mundurówka</h4>
+            <p>0000740106 (NIP)</p>
+        </div>
+        <div class="media-footer">
+            <h4><span class="arr">&rarr;</span>Media Społecznościowe:</h4>
+            <div>
+                <a href="https://www.tiktok.com/@locsm_zamosc" class="tiktok2" target="_blank">
+                    <img src="insta_icon.png" alt="Tik Tok CSM">
+                </a>
+                <a href="https://www.facebook.com/locsmz" class="face2" target="_blank">
+                    <img src="fac_icon.png" alt="CSM Facebook">
+                </a>
+                <a href="https://www.instagram.com/accounts/login/?next=%2Flocsm_zamosc%2F" target="_blank" class="instagram2">
+                    <img src="tikTok_icon.png" alt="Instagram CSM">
+                </a>
+            </div>
+            <a href="../podstrony/polityka_prywatnosci.html" class="polityka"><span class="arr">&rarr;</span>Polityka Prywatności</a>
+            <a href="../podstrony/tablica_tnt.png" style="color: #00e1ff; display: block; margin-top: 20px;" ><br><span class="arr">&rarr;</span>Dotacja Unijna</a>
+        </div>
+    </footer>
+
+
+      <script>
+        let progress = 0;
+        const maxProgress = 60; // do ilu procent ma dojść
+        const progressBar = document.getElementById("progress-bar");
+        const percentageText = document.getElementById("percentage-text");
+
+        const interval = setInterval(() => {
+        if (progress < maxProgress) {
+            progress++;
+            progressBar.style.width = progress + "%";
+            progressBar.textContent = progress + "%";
+            percentageText.textContent = progress + "%";
+        } else {
+            clearInterval(interval);
+        }
+        }, 50); // czas między kolejnymi krokami (ms)
+    </script>
+</body>
+</html>

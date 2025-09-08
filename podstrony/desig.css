@@ -56,7 +56,29 @@ section{
 }
 
 
+.progress-container {
+      width: 60%;
+      background-color: #ddd;
+      margin: 0 auto;
+      overflow: hidden;
+      height: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: #00e0f0;
+      text-align: center;
+      color: white;
+      line-height: 30px;
+      transition: width 0.3s ease;
+    }
+
+    .percentage {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
 
 
 
