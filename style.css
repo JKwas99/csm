@@ -81,7 +81,7 @@
 
 .dropdown-menu a {
   color: #00e1ff;
-  font-size: 16px;
+  font-size: 14px!important;
   text-decoration: none;
   transition: color 0.3s;
   width: 100%;
@@ -131,8 +131,8 @@
 .main-box {
   position: relative;
   width: 100%;
-  height: 100vh;
-  transform: translateY(-13vh);
+  height: calc(100vh + 14vh); /* zwiększamy wysokość, żeby wypełnić przestrzeń */
+    margin-top: -14vh; 
   overflow: hidden;
   padding: 10%;
   color: #fff;
@@ -1052,10 +1052,13 @@ footer#footer {
 }
 
 
+
+
 @media (max-width: 900px){
 .dropdown {
   position: relative;
   display: flex;
+  z-index: 10;
   flex-direction: column;
   align-items: flex-start;
   text-align: center;
@@ -1070,12 +1073,13 @@ footer#footer {
   position: absolute;
   list-style-type: none;
   top: 20px;
-  left: -40px;
+   left: -60px;
   padding: 15px 10px;
   background-color: transparent;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  background-color: #00000079;
+  text-align: left;
   margin-top: 10px;
   gap: 10px;
 }
@@ -1083,7 +1087,7 @@ footer#footer {
 /* Styl linków w dropdownie */
 .dropdown-menu a {
   color: #00e1ff;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   text-align: center;
   transition: color 0.3s;
@@ -1097,5 +1101,25 @@ footer#footer {
 
 .wirtualny>div{
   width: 100%;
+}
+}
+
+
+@media (max-width:700px){
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  width: 100vw;
+  top: 20px;
+  left: 50%;        /* przesunięcie do środka nadrzędnego */
+  transform: translateX(-50%);
+  padding: 15px 10px;
+  background-color: #080808;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  gap: 10px;
 }
 }
